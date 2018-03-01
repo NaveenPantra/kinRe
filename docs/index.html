@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KinRe | Vendors Registration</title>
+        <link rel="shortcut icon" type="image/png" href="images/kinreLogo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Media queries pending  -->
+        <!--<link rel="stylesheet" href="css/mediaQueries.css">-->
+        <script type="javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <header class="main">
+            <img src="images/kinreLogo_01.png" class="logo" alt="KinRe logo, KinRe">
+            <div class="center clear-fix">
+                <div class="card clear-fix">
+                    <div class="card__side card__side-front" id="register">
+
+                        <div class="card__intro">
+                            <div class="card__kinre"><!--<img class="logo" src="images/kinreLogo_01.png" alt="KinRe logo, KinRe">-->KinRe</div>
+                            <hr class="card__hr">
+                            <div class="card__register">Register with us</div>
+                        </div>
+
+                        <div class="card__form">
+                            <form name="register">
+                                <div class="card__form-phnum">
+                                    <!-- Some refactor should be done for correct implementation -->
+                                    <input type="number" id="phnum" class="phnum form-control" placeholder="Mobile Number" name="phnum" min="7000000" max="9999999999" minlength="7" maxlength="10" required="" autocomplete="">
+                                    <label for="phnum" class="phnum__label">Mobile Number</label>
+                                </div>
+                                <div class="card__form-submit">
+                                    <input type="submit" class="btn btn-submit" value="PROCEED &rarr;">
+                                </div>
+                            </form>
+                            <div class="card__login">
+                                <div class="login__text">
+                                    <p>Already have account?</p>
+                                </div>
+                                <div class="login__btn">
+                                    <button class="btn btn-log">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Currently pending (want to simulate it by JS (i.e: card rotation)) -->
+                    <div class="card__side card__side-back hide" id="login">
+                        <div class="card__intro">
+                            <div class="card__kinre"><!--<img class="logo" src="images/kinreLogo_01.png" alt="KinRe logo, KinRe">-->KinRe</div>
+                            <hr class="card__hr">
+                            <div class="card__register">Login</div>
+                            <div class="card__form-back">
+                                <form name="login">
+                                    <div class="card__uname">
+                                        <!-- Some refactor should be done for correct implementation -->
+                                        <input type="number" id="log-phnum" class="phnum form-control" placeholder="Mobile Number" name="phnum" min="7000000" max="9999999999" minlength="7" maxlength="10" required="" autocomplete="">
+                                        <label for="log-phnum" class="phnum__label">Mobile Number</label>
+                                    </div>
+                                    <div class="card__pword">
+                                        <input type="password" id="log-pword" class="phnum form-control" placeholder="Password" name="pword" minlength="8" required="" autocomplete="">
+                                        <label for="log-pword" class="phnum__label">Password</label>
+                                    </div>
+                                    <div class="card__form-submit">
+                                        <input type="submit" class="btn btn-submit" value="Login &rarr;">
+                                    </div>
+                                </form>
+                                <div class="card__back-register">
+                                    <div class="register__text">
+                                        Need Account?
+                                    </div>
+                                    <div class="register__btn">
+                                        <button class="btn btn-reg">Register</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
