@@ -224,6 +224,12 @@ body {
 .phnum:active, .phnum:focus {
     border-bottom: 3px solid #0a5f7d;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 /* Inputfield end */
 
 /* Input label */

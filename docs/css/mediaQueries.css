@@ -42,10 +42,108 @@
   .main {
     clip-path: none;
   }
+
+  .card__side-front {
+    padding: 2rem 0;
+  }
+
+  .card__intro {
+    margin-bottom: 3rem;
+  }
+
+  .card__logo {
+    width: 15rem;
+  }
+
+  .card__hr {
+    height: 3px;
+  }
+
+  .card__register {
+    font-size: 2rem;
+  }
+
+  .card__form-phnum {
+    /* text-align: center; */
+  }
+
+  .phnum {
+    width: 90%;
+    font-size: 3rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .login__text, .register__text {
+    margin: 4rem auto;
+  }
+
+  .btn-submit, .btn-log, .btn-reg {
+    font-size: 1.7rem;
+  }
+
+  .login__text, .register__text {
+    font-size: 1.5rem;
+  }
+
 }
 
 @media (min-width: 1030px) {
   html {
     font-size: 67%;
   }
+
+  .main {
+    clip-path: none;
+  }
+
+  .card__side-front {
+    padding: 0;
+  }
+
+  .card__intro {
+    margin-bottom: 0;
+  }
+
+  .card__logo {
+    width: 10rem;
+  }
+
+  .card__hr {
+    height: 2px;
+  }
+
+  .card__form-submit {
+    margin: 0;
+  }
+
+  .card__register {
+    font-size: 1.5rem;
+  }
+
+  .card__form-phnum {
+    /* text-align: center; */
+  }
+
+  .phnum {
+    width: 90%;
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .phnum__label {
+    font-size: 1rem;
+    padding-left: 4rem;
+  }
+
+  .login__text, .register__text {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+
+  .btn-submit, .btn-log, .btn-reg {
+    font-size: 1.4rem;
+  }
+
 }
