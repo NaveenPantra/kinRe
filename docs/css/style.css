@@ -69,7 +69,7 @@ body {
 .main {
     height: 100vh;
     position: relative;
-    background-image: linear-gradient(60deg, rgba(178, 235, 242, 0.56), rgba(77, 208, 225, 0.95)), url(../images/mainBackground.jpg);
+    background-image: linear-gradient(60deg, rgba(178, 235, 242, 0.56), #0a5f7d), url(../images/mainBackground.jpg);
     background-position: center;
     background-size: cover;
     clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 75% 100% , 0% 100%);
@@ -82,6 +82,11 @@ body {
     -webkit-animation: fromLeft 0.5s ease-in;
     -o-animation: fromLeft 0.5s ease-in;
     animation: fromLeft 0.5s ease-in;
+}
+
+.card__logo {
+  width: 10rem;
+  backface-visibility: hidden;
 }
 
 /* Centering Content Begin */
@@ -172,7 +177,7 @@ body {
 .card__hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ec407a, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #135d7d, rgba(0, 0, 0, 0));
 }
 
 /* Horizontal line styling end*/
@@ -180,7 +185,7 @@ body {
 .card__register {
     margin: 1rem;
     text-align: center;
-    color: #d81b60;
+    color: #135d7d;
 }
 
 /* Form Styling */
@@ -203,6 +208,7 @@ body {
     border-bottom: 3px solid transparent;
     border-radius: 3px;
     outline: none;
+    backface-visibility: hidden;
     background-color: rgba(255, 255, 255, 0.5);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -212,11 +218,11 @@ body {
 }
 
 .phnum:active:invalid, .phnum:focus:invalid {
-    border-bottom: 3px solid rgba(77, 208, 225, 0.95);
+    border-bottom: 3px solid #db2d6c;
 }
 
 .phnum:active, .phnum:focus {
-    border-bottom: 3px solid #d81b60;
+    border-bottom: 3px solid #0a5f7d;
 }
 /* Inputfield end */
 
@@ -257,7 +263,7 @@ body {
 }
 
 .btn-submit, .btn-log, .btn-reg {
-    border-bottom: 1px solid #ff3366;
+    border-bottom: 1px solid #0a5f7d;
     padding: 1rem;
     color: #333;
     transition: all 0.3s;
@@ -265,7 +271,7 @@ body {
 
 .btn-submit:hover, .btn-log:hover, .btn-reg:hover {
     color: #eee;
-    background-color: #ff3366;
+    background-color: #0a5f7d;
     transform: translateY(-0.3rem);
     box-shadow: 2px 3px 5px #bdbdbd;
 }
