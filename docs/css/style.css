@@ -166,7 +166,7 @@ body {
 .card__kinre {
     margin: 1rem;
     text-align: center;
-    color: #d81b60;
+    color: #126481;
     font-size: 3rem;
     font-weight: 700;
     clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 75% 100% , 0% 100%);
@@ -205,7 +205,7 @@ body {
     color: #555;
     display: block;
     border: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid #c2c4c570;
     border-radius: 3px;
     outline: none;
     backface-visibility: hidden;
@@ -258,7 +258,7 @@ input[type=number]::-webkit-outer-spin-button {
 .card__form-submit {
     width: 90%;
     text-align: right;
-    margin: 1.5rem auto 0;
+    margin: -3rem auto 0;
 }
 
 .btn {
@@ -269,10 +269,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .btn-submit, .btn-log, .btn-reg {
-    border-bottom: 1px solid #0a5f7d;
+    border-bottom: 1px solid transparent;
     padding: 1rem;
     color: #333;
     transition: all 0.3s;
+    box-shadow: 1px 1px 9px #555;
 }
 
 .btn-submit:hover, .btn-log:hover, .btn-reg:hover {
