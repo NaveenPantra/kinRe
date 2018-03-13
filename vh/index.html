@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/kinreLogo.png">
+
+    <title>KinRe | Vendor Registration</title>
+  </head>
+  <body>
+    <img src="img/kinreLogo_01.png" class="logo" alt="KinRe logo, KinRe">
+    <main class="main">
+
+      <div class="card">
+
+        <!----------------- Card frontside ----------------->
+          <div class=" card__side-front" id="register">
+            <div class="card__intro">
+                <div class="card__kinre"><!--<img class="card__logo" src="images/kinreLogo_03.png" alt="KinRe logo, KinRe">-->Vendors Login</div>
+                <hr class="card__hr">
+                <!-- <div class="card__register">Login</div> -->
+            </div>
+                <div class="card__form-back">
+                    <form name="login">
+                        <div class="card__uname">
+                            <!-- Some refactor should be done for correct implementation -->
+                            <input type="number" id="log-phnum" class="phnum form-control" placeholder="Mobile Number" name="phnum" min="7000000" max="9999999999" minlength="7" maxlength="10" required="" autocomplete="">
+                            <label for="log-phnum" class="phnum__label">Mobile Number</label>
+                        </div>
+                        <div class="card__pword">
+                            <input type="password" id="log-pword" class="phnum form-control" placeholder="Password" name="pword" minlength="8" required="" autocomplete="">
+                            <label for="log-pword" class="phnum__label">Password</label>
+                        </div>
+                        <div class="card__form-submit">
+                            <input type="submit" class="btn btn-submit" value="Login &rarr;">
+                        </div>
+                    </form>
+                    <div class="card__back-register">
+                        <div class="register__text">
+                            Need Account?
+                        </div>
+                        <div class="register__btn">
+                            <button class="btn btn-reg">Register</button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+<!----------------- Card backside ----------------->
+          <div class=" card__side-back hide" id="login">
+
+
+            <div class="card__intro">
+                <div class="card__kinre">Vendors <!--<img class="card__logo" src="images/kinreLogo_03.png" alt="KinRe logo, KinRe">--></div>
+                <hr class="card__hr">
+                <div class="card__register">Register with us</div>
+            </div>
+
+            <div class="card__form">
+                <form name="register">
+                    <div class="card__form-phnum">
+                        <!-- Some refactor should be done for correct implementation -->
+                        <input type="number" id="phnum" class="phnum form-control" placeholder="Mobile Number" name="phnum" min="7000000" max="9999999999" minlength="7" maxlength="10" required="" autocomplete="">
+                        <label for="phnum" class="phnum__label">Mobile Number</label>
+                    </div>
+                    <div class="card__form-submit">
+                        <input type="submit" class="btn btn-submit" value="PROCEED &rarr;">
+                    </div>
+                </form>
+                <div class="card__login">
+                    <div class="login__text">
+                        <p>Already have account?</p>
+                    </div>
+                    <div class="login__btn">
+                        <button class="btn btn-log">Login</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+
+
+    </main>
+    <script type="text/javascript" src="js/cardRotation.js"></script>
+  </body>
+</html>

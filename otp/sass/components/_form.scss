@@ -1,0 +1,82 @@
+.form {
+
+  &-phnum {
+    display: block;
+    margin: 0 auto;
+    &--inp {
+      color: var(--color-Grey-1);
+      font-size: 2rem;
+      font-weight: 300;
+      display: block;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      width: 85%;
+      padding: 1rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      // border-bottom: 1px solid var(--color-primary);
+      cursor: not-allowed;
+    }
+  }
+
+  &-otp {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    &--inp {
+      color: var(--color-Grey-2);
+      font-size: 2rem;
+      font-weight: 300;
+      display: block;
+      margin: 0 auto;
+      letter-spacing: 4px;
+      text-align: center;
+      padding: 1rem;
+      border: none;
+      border-bottom: 1px solid var(--color-Grey-2);
+      outline: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        // width: 3px;
+        background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
+        // transform: scaleX(0);
+
+        // **Where to start transformation (i.e: from top, from bottom, from center)
+        transform-origin: center;
+        // **for transition dalay transition: property palyTime transitionFunction delayTime (staged animations)
+        transition: transform 0.2s, width 0.4s cubic-bezier(1,0,0,1) 0.2s;
+      }
+
+      &:placeholder-shown + .form-otp--label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3.3rem);
+      }
+    }
+
+    &--label {
+      display: block;
+      transform: translateY(0.3rem);
+      transition: all 0.3s;
+    }
+  }
+
+  &-submit {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.card_hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, red, transparent);
+}

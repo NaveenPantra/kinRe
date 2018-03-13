@@ -1,0 +1,180 @@
+:root {
+  --color-primary: #126481;
+  --color-primary-01: #135d7d;
+  --color-Grey-1: #555;
+  --color-Grey-2: #444; }
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: black;
+  position: relative;
+  min-height: 100vh; }
+
+.btn {
+  border: none;
+  padding: 1rem;
+  background-color: transparent;
+  box-shadow: 1px 2px 1rem var(--color-Grey-2);
+  outline: none;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-primary);
+  transform: translateY(0) scaleX(1);
+  transition: all 0.3s; }
+  .btn:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    transform: scaleX(1.05) translateY(-0.2rem); }
+  .btn:active {
+    transform: translateY(0); }
+  .btn--inp {
+    margin-top: -1.3rem; }
+
+.card {
+  width: 40rem;
+  padding: 1rem;
+  background-color: #fff;
+  /* Card intro section begin */
+  /* Card intro section end */
+  /* Card form section begin */
+  /* Card form section end */ }
+  .card__intro-label {
+    text-align: center;
+    color: var(--color-primary); }
+    .card__intro-label h2 {
+      font-size: 3rem;
+      font-weight: 700; }
+  .card__intro-otp {
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 1.5rem; }
+    .card__intro-otp P {
+      margin: 0.5rem;
+      text-align: center;
+      color: #135d7d; }
+  .card__hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, var(--color-primary-01), transparent); }
+  .card__form {
+    margin: 1rem; }
+  .card__footer {
+    text-align: center; }
+    .card__footer-label {
+      font-size: 1.4rem; }
+    .card__footer-btn {
+      margin-top: 1rem; }
+
+.form-phnum {
+  display: block;
+  margin: 0 auto; }
+  .form-phnum--inp {
+    color: var(--color-Grey-1);
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    width: 85%;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: not-allowed; }
+
+.form-otp {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+  .form-otp--inp {
+    color: var(--color-Grey-2);
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--color-Grey-2);
+    outline: none; }
+    .form-otp--inp::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-dark));
+      transform-origin: center;
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s; }
+    .form-otp--inp:placeholder-shown + .form-otp--label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-3.3rem); }
+  .form-otp--label {
+    display: block;
+    transform: translateY(0.3rem);
+    transition: all 0.3s; }
+
+.form-submit {
+  text-align: right;
+  display: flex;
+  justify-content: space-between; }
+
+.card_hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, red, transparent); }
+
+.resend-otp:link, .resend-otp:visited {
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.resend-otp:hover, .resend-otp:active {
+  color: var(--color-primary); }
+
+.main {
+  height: 100vh;
+  background-image: linear-gradient(60deg, rgba(178, 235, 242, 0.56), #0a5f7d), url(../img/mainBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1; }
+
+@media (max-width: 920px) {
+  html {
+    font-size: 58.5%; } }
+
+@media (max-width: 690px) {
+  html {
+    font-size: 55.5%; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 57.5%; } }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 43.5%; } }
+
+@media (max-width: 360px) {
+  html {
+    font-size: 41.5%; } }
+
+@media (max-width: 350px) {
+  html {
+    font-size: 38.5%; } }

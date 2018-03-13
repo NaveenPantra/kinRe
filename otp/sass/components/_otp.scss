@@ -1,0 +1,9 @@
+.resend-otp:link, .resend-otp:visited {
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.resend-otp:hover, .resend-otp:active {
+  color: var(--color-primary);
+}

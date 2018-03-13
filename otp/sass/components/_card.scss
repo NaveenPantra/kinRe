@@ -1,0 +1,63 @@
+.card {
+  width: 40rem;
+  padding: 1rem;
+  background-color: #fff;
+
+  /* Card intro section begin */
+  &__intro {
+
+    &-label {
+      text-align: center;
+      color: var(--color-primary);
+
+      & h2 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+    }
+
+    &-otp {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 1.5rem;
+
+      & P {
+        margin: 0.5rem;
+        text-align: center;
+        color: #135d7d;
+      }
+    }
+  }
+
+  &__hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, var(--color-primary-01), transparent);
+  }
+
+  /* Card intro section end */
+
+  /* Card form section begin */
+
+  &__form {
+    margin: 1rem;
+  }
+
+  /* Card form section end */
+
+  &__footer {
+      text-align: center;
+
+    &-label {
+      font-size: 1.4rem;
+      & p {
+
+      }
+    }
+
+    &-btn {
+      margin-top: 1rem;
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+
+// Initially applicable to back side of the card
+// This is to hide the card completly form the webpage
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/*--------------- Card rotation start ---------------*/
+// This are simulated by javascript (..js/cardRotation.js)
+
+.rotate {
+  transform: rotateY(180deg);
+
+  &Back {
+    transform: rotateY(180deg);
+  }
+
+  &Front {
+    transform: rotateY(360deg);
+  }
+}
+
+
+/*--------------- Card rotation complete ---------------*/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinRe | Vendor Registration OTP</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/kinreLogo.png">
+  </head>
+  <body>
+
+    <main class="main">
+      <header class="card">
+
+        <div class="card__intro">
+          <div class="card__intro-label">
+            <h2>KinRe Vendors</h2>
+          </div>
+            <hr class="card__hr">
+          <div class="card__intro-otp">
+            <p>OTP sent to your mobile number</p>
+          </div>
+        </div>
+
+        <form action="" class="card__form" name=otp-form>
+          <div class="form-phnum">
+            <input type="text" class="form-phnum--inp form-control" name="phnum" value="9493464869" disabled>
+          </div>
+          <div class="form-otp">
+            <input type="text" class="form-otp--inp form-control" id="otp" name="otp" pattern="[0-9]*" minlength="6" maxlength="6" placeholder="OTP" required="">
+            <label for="otp" class="form-otp--label">OTP</label>
+          </div>
+          <div class="form-submit">
+            <a href="#" class="resend-otp">Resend OTP</a>
+            <input type="submit" class="btn btn--inp form-control" name="otp-submit" id="otp-submit" value="Proceed &rarr;">
+          </div>
+        </form>
+
+        <div class="card__footer">
+          <div class="card__footer-label">
+            <p class="footer-info">Already has account?</p>
+          </div>
+          <div class="card__footer-btn">
+            <button class="btn btn--login">
+              &larr; Login
+            </button>
+          </div>
+        </div>
+
+      </header>
+    </main>
+
+  </body>
+</html>

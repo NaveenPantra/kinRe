@@ -1,0 +1,66 @@
+
+/* Input Field */
+.phnum {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #555;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #c2c4c570;
+    border-radius: 3px;
+    outline: none;
+    backface-visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:active:invalid, &:focus:invalid {
+      border-bottom: 2px solid #db2d6c;
+    }
+
+    &:active, &:focus {
+      border-bottom: 2px solid #0a5f7d;
+    }
+
+    &__label {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #555;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        display: block;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    &:placeholder-shown + .phnum__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-3.3rem);
+    }
+
+    &::after {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, black, black);
+    }
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.login__text, .register__text {
+    margin: 1rem;
+}

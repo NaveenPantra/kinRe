@@ -1,0 +1,230 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: black;
+  position: relative;
+  min-height: 100vh; }
+
+.main {
+  height: 100vh;
+  background-image: linear-gradient(60deg, rgba(178, 235, 242, 0.56), #0a5f7d), url(../img/mainBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1; }
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes formTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes evolve {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Buttons Start */
+.btn {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+  .btn-submit, .btn-log, .btn-reg {
+    border-bottom: 1px solid #0a5f7d;
+    padding: 1rem;
+    color: #333;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 9px #ddd; }
+  .btn-submit:hover, .btn-log:hover, .btn-reg:hover {
+    color: #fff;
+    background-color: #0a5f7d;
+    transform: translateY(-0.3rem);
+    box-shadow: 2px 3px 5px #777; }
+  .btn-submit:active, .btn-log:active, .btn-reg:active {
+    transform: translateY(0); }
+
+.login__btn, .register__btn {
+  margin: 1rem; }
+
+/* Buttons End */
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  width: 50rem;
+  animation: fromTop 3s ease-in; }
+  .card__side-front {
+    background-color: #fff;
+    padding: 0.5rem; }
+  .card__side-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    background-color: #fff; }
+  .card__side-back, .card__side-front {
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px #aaa;
+    transition: all 0.5s;
+    width: 100%; }
+  .card__logo {
+    width: 10rem;
+    backface-visibility: hidden; }
+  .card__kinre {
+    text-align: center;
+    color: #126481;
+    font-size: 3rem;
+    font-weight: 700; }
+  .card__register {
+    margin: 1rem;
+    text-align: center;
+    color: #135d7d; }
+  .card__form-phnum {
+    width: 90%;
+    margin: 2rem auto 0; }
+  .card__form-submit {
+    width: 90%;
+    text-align: right; }
+  .card__login {
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center; }
+  .card__form-back {
+    width: 95%;
+    margin: 1rem auto 0; }
+  .card__back-register {
+    text-align: center; }
+
+/* Input Field */
+.phnum {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #555;
+  display: block;
+  border: none;
+  border-bottom: 2px solid #c2c4c570;
+  border-radius: 3px;
+  outline: none;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .phnum:active:invalid, .phnum:focus:invalid {
+    border-bottom: 2px solid #db2d6c; }
+  .phnum:active, .phnum:focus {
+    border-bottom: 2px solid #0a5f7d; }
+  .phnum__label {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #555;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    display: block;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .phnum:placeholder-shown + .phnum__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3.3rem); }
+  .phnum::after {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, black, black); }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.login__text, .register__text {
+  margin: 1rem; }
+
+/* Horizontal line styling */
+.card__hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #135d7d, transparent); }
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  width: 10rem;
+  z-index: 1;
+  -webkit-animation: fromLeft 0.5s ease-in;
+  -o-animation: fromLeft 0.5s ease-in;
+  animation: fromLeft 0.5s ease-in; }
+
+.hide {
+  opacity: 0;
+  visibility: hidden; }
+
+/*--------------- Card rotation start ---------------*/
+.rotate {
+  transform: rotateY(180deg); }
+  .rotateBack {
+    transform: rotateY(180deg); }
+  .rotateFront {
+    transform: rotateY(360deg); }
+
+/*--------------- Card rotation complete ---------------*/
+@media (max-width: 920px) {
+  html {
+    font-size: 58.5%; } }
+
+@media (max-width: 690px) {
+  html {
+    font-size: 55.5%; } }
+
+@media (max-width: 580px) {
+  html {
+    font-size: 49.5%; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 46.5%; } }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 43.5%; } }
+
+@media (max-width: 360px) {
+  html {
+    font-size: 41.5%; } }
+
+@media (max-width: 350px) {
+  html {
+    font-size: 38.5%; } }
